@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+display:inline-block;
+position: fixed;
+height: 100px;
+width: 100%;
+background-color: whitesmoke;
+
+}
+.navbar a{
+    display: flex;
+    flex-direction: ro;
+    justify-content: center;
+    align-items: cen;
+}
