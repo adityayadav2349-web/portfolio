@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+<script>
+  
+      
+      if (!sessionStorage.getItem('introSeen')) {
+        window.location.replace('login.html');
+      }
+      
+      window.addEventListener('beforeunload', function() {
+        sessionStorage.removeItem('introSeen');
+      });
+  
+
+
+</script>
 </head>
 <body>
-    <header>
+   <header>
     <div class="navbar">
   <h2>Aditya Yadav</h2>
   <div>
@@ -72,3 +86,7 @@ A watch brand clone inspired by Titan, designed to showcase a modern UI, respons
 <footer>
   <p>&copy; 2026 Aditya Yadav | All Rights Reserved</p>
 </footer>
+
+
+</body>
+</html>
